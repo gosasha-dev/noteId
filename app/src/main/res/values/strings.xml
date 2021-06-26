@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Noteid</string>
+
+    <string name="title_new_note">Add new note</string>
 </resources>
