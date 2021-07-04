@@ -17,8 +17,6 @@ import moxy.presenter.ProvidePresenter
  */
 class MainActivity : MvpAppCompatActivity(), MainView {
 
-    val infoForPresenter: String = "F0r PreSentOOR"
-
     //add presenter
     @InjectPresenter
     lateinit var mainPresenter: MainPresenter
@@ -26,12 +24,10 @@ class MainActivity : MvpAppCompatActivity(), MainView {
     @ProvidePresenter
     fun provideMainPresenter(): MainPresenter = MainPresenter()
 
-
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-
     }
 
     //реализация функций
