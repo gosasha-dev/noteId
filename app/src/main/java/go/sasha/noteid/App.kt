@@ -6,6 +6,8 @@ import go.sasha.noteid.di.DaggerAppComponent
 
 class App : DaggerApplication() {
 
+    //test
+
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
         return DaggerAppComponent.builder()
             .application(this)
