@@ -2,6 +2,7 @@ package go.sasha.noteid.di.binder
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import go.sasha.noteid.activityes.AddNoteActivity
 import go.sasha.noteid.activityes.MainActivity
 
 /**
@@ -13,4 +14,7 @@ abstract class ActivityBinder {
 
     @ContributesAndroidInjector
     abstract fun bindMainActivity(): MainActivity
+
+    @ContributesAndroidInjector
+    abstract fun bindAddNoteActivity(): AddNoteActivity
 }
